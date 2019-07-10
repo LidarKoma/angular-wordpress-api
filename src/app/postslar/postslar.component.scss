@@ -1,0 +1,27 @@
+.card-img-top {
+    padding: 28px;
+}
+.img-resize {
+    height: 280px;
+    object-fit: cover;
+    object-position: center center;
+  }
+    a:hover img.card-img-top{
+
+    transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.0, 1.1);
+    -webkit-transform: scale(1.0, 1.1);
+    transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -webkit-transition: .2s ease-out
+
+}
+.c {
+    //border:1px solid #da5a86;
+    //background-color: beige;
+
+    border: 2px solid #5f454d;
+    background-color: #dea245a6;
+}
+
+

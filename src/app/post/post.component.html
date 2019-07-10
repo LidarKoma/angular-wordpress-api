@@ -1,0 +1,145 @@
+<div class="container">
+<mat-toolbar color="primary" class="margin-t">
+  <span>Blog Listt</span>
+</mat-toolbar>
+<div class="page-wrapper">
+  <div fxLayout="row wrap" fxLayoutGap="16px" *ngIf="post$| async as post; else loading">
+    <mat-card fxFlex="calc(33% - 16px)">
+      <mat-card-header>
+        <mat-card-title>{{ post.id}}</mat-card-title>
+        <mat-card-subtitle>{{post.content.rendered}}</mat-card-subtitle>
+        <mat-card-title>{{post.date}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content [innerHTML]="post.content.rendered"></mat-card-content>
+      <img matCardImage [src]="post['acf'].images.sizes['thumbnail']" width="20px">
+
+      <mat-card-actions align="start">
+        <a mat-button [routerLink]="['/post', post.id]">View</a>
+      </mat-card-actions>
+    </mat-card>
+    
+ 
+
+
+    <div *ngIf="image==true">
+      <h3>This some gallery about cars</h3>
+      
+      <ngx-gallery  [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+      </div>
+      <div *ngIf="image==false">
+      <h3>This some gallery about cars</h3>
+      <iframe width="420" height="315"
+      [src]='youtubeUrl'>
+      </iframe>
+      </div>
+
+
+
+  
+
+
+
+<section class="testimonials4 cid-qxz0gNvgdF" id="testimonials4-8" data-rv-view="61">
+
+  
+
+  
+  <div class="container">
+    <h2 class="pb-3 mbr-fonts-style mbr-white align-center display-2"><strong>Our teachers</strong></h2>
+    <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style mbr-white align-center display-5">
+        Meet our team
+    </h3>
+    <div class="col-md-10 testimonials-container"> 
+      
+
+      
+    <div class="testimonials-item">
+        <div class="user row">
+          <div class="col-lg-3 col-md-4">
+            <div class="user_image">
+              <img src="https://media.licdn.com/dms/image/C4D03AQHAnOrWJiqW1A/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=rvDRoCRZKrnXrVhsUoWsLszH6YP0FU1kO62oZlgZQLw" alt="" title="" media-simple="true">
+            </div>
+          </div>
+          <div class="testimonials-caption col-lg-9 col-md-8">
+            <div class="user_text ">
+              <p class="mbr-fonts-style  display-7">
+                 "Very often the teacher acts not only as a teacher, but also as a psychologist: he supports, gives advice, helps resolve disputable situations."
+              </p>
+            </div>
+            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
+                 Jon
+            </div>
+            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
+                 Writer, Poerty and Copywriting courses</div>
+          </div>
+        </div>
+      </div><div class="testimonials-item">
+        <div class="user row">
+          <div class="col-lg-3 col-md-4">
+            <div class="user_image">
+              <img src="assets/images/22-960x960.jpg" alt="" title="" media-simple="true">
+            </div>
+          </div>
+          <div class="testimonials-caption col-lg-9 col-md-8">
+            <div class="user_text">
+              <p class="mbr-fonts-style  display-7">
+                 "When I say that the child is unusual, I really believe in it. And if I call my parents to school and talk about the behavior or assessments of the student, then only because I believe: he really can improve."
+              </p>
+            </div>
+            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
+                 Regina
+            </div>
+            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
+                 Blogger</div>
+          </div>
+        </div>
+      </div><div class="testimonials-item">
+        <div class="user row">
+          <div class="col-lg-3 col-md-4">
+            <div class="user_image">
+              <img src="assets/images/trte-960x960.jpg" alt="" title="" media-simple="true">
+            </div>
+          </div>
+          <div class="testimonials-caption col-lg-9 col-md-8">
+            <div class="user_text">
+              <p class="mbr-fonts-style  display-7">
+                 "When I worked in medicine, I could not imagine another life. However, once I crossed the threshold of the class, as I understood: this is exactly the place where I should be"
+              </p>
+            </div>
+            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
+                 Tom
+            </div>
+            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
+                 Web Designer</div>
+          </div>
+        </div>
+      </div><div class="testimonials-item">
+        <div class="user row">
+          <div class="col-lg-3 col-md-4">
+            <div class="user_image">
+              <img src="assets/images/3434-960x960.jpg" alt="" title="" media-simple="true">
+            </div>
+          </div>
+          <div class="testimonials-caption col-lg-9 col-md-8">
+            <div class="user_text">
+              <p class="mbr-fonts-style  display-7">
+                 "The teacher is one of the most difficult professions, which brings both moral feelings and a huge reward!"
+              </p>
+            </div>
+            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
+                 Arnold
+            </div>
+            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
+                 Designer, Needlework and Grapics courses</div>
+          </div>
+        </div>
+      </div></div>
+  </div>
+</section>
+</div>
+
+</div>
+<ng-template #loading>
+  <img src="assets/images/loading.gif">
+</ng-template>
+</div>

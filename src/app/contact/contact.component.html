@@ -1,0 +1,126 @@
+
+<!-- form goes here -->
+
+<!--
+  <h1 class="wow slideInLeft" data-wow-duration="2s">Wow effect!</h1>
+-->
+
+  <div id="commentform" class="cid-qwTDXa80kH">
+      <div class="container cc">
+            <h1 class="h1-mystyle">CONTACT</h1>
+
+      <div class="row">
+        <div class="col sm-12 col-md-6 ">
+          <div id="respond" class="comment-respond">
+      
+      <form [formGroup]="registerForms" (ngSubmit)="processForm()">
+          <h3 class="font-color">please fill the form</h3>
+          
+
+      <div class="form-group wow fadeInUp" data-wow-delay=".8s">
+      <textarea formControlName="body" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.body.errors }" placeholder="Your Message"></textarea>
+      <div *ngIf="submitted && f.body.errors" class="invalid-feedback">
+        <div *ngIf="f.body.errors.required">message is required</div>
+    </div>
+    
+    </div>
+    
+      <div class="form-group wow fadeInUp" data-wow-delay="1.6s">
+      <input id="author" formControlName="full_name" type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.full_name.errors }" placeholder="Your Name *">
+      <div *ngIf="submitted && f.full_name.errors" class="invalid-feedback">
+        <div *ngIf="f.full_name.errors.required">Name is required</div>
+    </div>
+      </div>
+      <div class="form-group wow fadeInUp" data-wow-delay="2s"> 
+      <input id="email" formControlName="email" type="email" class="form-control" value="" placeholder="Your Email *"  [ngClass]="{ 'is-invalid': submitted && f.email.errors }"/>
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+          <div *ngIf="f.email.errors.required">Email is required</div>
+          <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+      
+      </div>
+      
+      </div>
+      <input name="submit" type="submit"  value="Post Comment"> 
+      <div class="form-group">
+          <p class="form-submit">
+            <input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> 
+            </p> 
+       
+        </div>
+      
+
+      
+      </form>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+          <h3 class="font-color">please fill the form</h3>
+
+          <div class="google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="550" height="568" frameborder="0" style="border:0">
+              </iframe>
+          </div>
+          
+      </div>
+      
+      </div>
+      
+      </div>
+      <div class="overlayy">
+        
+        </div>
+      </div>
+
+     <!--- Team ----->
+ 
+ 
+<div id="team" class="team">
+    <div class="container">
+        <h2 class="wow fadeInUp">Meet our team</h2>
+        <p class="wow fadeInUp c" data-wow-delay="0.4">Lorem Ipsum passages, and more recently with desktop publishing software</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="2s">
+                <img src="assets/team-1.jpg" class="rounded-circle" alt="">
+                <h4>John Doe</h4>
+                <b>CEO and Founder</b>
+                <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-3  wow fadeInLeft" data-wow-delay="1.6s">
+                <img src="images/team/team-2.jpg" class="rounded-circle" alt="">
+                <h4>John Doe</h4>
+                <b>CEO and Founder</b>
+                <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-3  wow fadeInLeft"  data-wow-delay="1.2s">
+                <img src="images/team/team-3.jpg" class="rounded-circle" alt="">
+                <h4>John Doe</h4>
+                <b>CEO and Founder</b>
+                <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-3  wow fadeInLeft" data-wow-delay="0.8s">
+                <img src="images/team/team-4.jpg" class="rounded-circle" alt="">
+                <h4>John Doe</h4>
+                <b>CEO and Founder</b>
+                <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!--- End Team ---->

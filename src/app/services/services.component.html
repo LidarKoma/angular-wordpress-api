@@ -1,0 +1,49 @@
+
+<div class="layout" *ngIf="posts$2">
+    <div class="container">
+  <h1 class="h1-mystyle">This is a Heading</h1>
+  
+    <br>
+    <ng-template #loading>
+        <img src="assets/images/loading.gif">
+     </ng-template>
+    
+    <div class="center">
+     <p>some of posts about posts is amazing jkdsh d</p>
+     <h4 class="h4">some of postsddddd</h4>
+     <p>some of posts about posts is amazing jkdsh d</p>
+  
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let post of posts$2;let index=i">
+            <!-- style="width: 22rem;"-->
+           
+  
+  <div class="card text-center cardcenter" >
+      <div class="card-body">
+          <h5 class="card-title">{{ post.id}}</h5>
+          <h5 class="card-title">{{ post.name}}</h5>
+          <a [routerLink]="['/work', post.id,post.name +'.html']"><img class="card-img-top" src="{{post.image}}">
+          
+          </a>
+          <a [routerLink]="['/work', post.id,post.name +'.html']" class="btn btn-primary buton1">Go somewhere</a>
+  
+  
+     </div>
+      
+    </div>
+    
+  
+    <br><br>
+    </div>
+  
+   
+    
+  
+    
+  </div>
+  
+  </div>
+  
+  </div>
+  
+  

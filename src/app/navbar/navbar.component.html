@@ -1,0 +1,153 @@
+<div class="header_wrapper">
+
+    <div class="container inline">
+
+        <div class="row">
+
+            <div class="header_top_right_wrap">
+                <div id="logo-image" class="logo-image" style="float:left">
+                    <a class="logo" href="https://www.chicagogadgets.com/"><img src="assets/ritasalon4.png" alt="Chicago Gadgets Logo"></a>
+                </div>
+
+                <ul class="shop-list-header">
+                    <li><div id="shop-time" style="
+display: grid;
+">4611 N Kedzie Avenue<br>Chicago, IL 60625<br>Open Mon-Fri: 10am-7pm<br>Sat: 10am-6pm<br>(773) 463-9999<br><!--<span class="closed" style = "font-size:1.2em; font-weight:bold; color:red">CLOSED ON JANUARY 2, 2017 DUE TO NEW YEAR'S HOLIDAY</span>--> </div></li>
+                    <!--<li class="search_btn"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a href="#"><span>Login</span></a></li>
+                    <li><a href="#"><span>Register</span></a></li>-->
+                </ul>
+                <div id="logos-container">
+                    <div id="youtube-image" class="logo-images">
+                        <a href="https://www.youtube.com/watch?v=ttHaTxQwQZg" target="_blank"><img src="https://findicons.com/files/icons/825/chrome_social_media/70/chrome_youtube.png" alt="You Tube" title="You Tube"></a>
+                    </div>
+                    <div id="facebook-image" class="logo-images">
+                        <a href="https://www.facebook.com/pages/Chicago-Gadgets/134977889853276" target="_blank"><img src="https://findicons.com/files/icons/825/chrome_social_media/70/chrome_youtube.png" alt="Facebook" title="Facebook"></a>
+                    </div>
+                    <div id="twitter-image" class="logo-images">
+                        <a href="http://www.yelp.com/biz/chicago-gadgets-store-chicago" target="_blank"><img src="https://findicons.com/files/icons/825/chrome_social_media/70/chrome_youtube.png" alt="Yelp" title="Yelp"></a>
+                    </div>    
+                </div>
+
+                
+
+            </div> 
+
+        </div>
+
+    </div>
+
+</div>
+<!--
+    
+    <div class="jumbotron header_wrapper" style="margin-bottom:0">
+
+
+    <div class="row">
+        <div class="col-md-2 offset-md-1 col-lg-1 offset-lg-1">
+            <a class="logo" href="https://www.chicagogadgets.com/"><img src="https://www.chicagogadgets.com/images/logo.png" alt="Chicago Gadgets Logo"></a>
+        </div>
+        <div class="col-md-6 offset-md-3 col-lg-3 offset-lg-4">
+           <ul class="list-inline">
+  <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=ttHaTxQwQZg" 
+                target="_blank">
+                <img src="https://findicons.com/files/icons/825/chrome_social_media/70/chrome_youtube.png" alt="You Tube" title="You Tube">
+              </a></li>
+  <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=ttHaTxQwQZg" 
+                target="_blank">
+                <img src="https://findicons.com/files/icons/825/chrome_social_media/70/chrome_youtube.png" alt="You Tube" title="You Tube">
+              </a></li>
+              <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=ttHaTxQwQZg" 
+                target="_blank">
+                <img src="https://findicons.com/files/icons/825/chrome_social_media/70/chrome_youtube.png" alt="You Tube" title="You Tube">
+              </a>
+            </li>
+            
+        </ul>  
+
+        </div>
+        
+       
+        <div class="col col-md-3  p shop-time col col-lg-2">
+            <div class="row">
+                4611 N Kedzie Avenue
+              </div>
+            <div class="row">
+                Chicago, IL 60625
+              
+              </div>
+              <div class="row">
+                  Open Mon-Fri: 10am-7pm
+                   </div>
+                  <div class="row">
+                      Sat: 10am-6pm                      
+                      </div>
+                      <div class="row">
+                          (773) 463-9999                      
+                          </div>
+        </div>
+      </div>
+    </div>
+  -->
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-light padding">
+    <!--<a class="navbar-brand" href="#">Navbar</a>-->
+  
+    <!--<a class="navbar-brand hideimage" href="#myinfo"><img [src]="['assets/image1.jpg']"  style="width: 3%" ></a>-->
+  
+  
+  
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+     aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+     <span><i class="fa fa-home" aria-hidden="true"></i></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto justified">
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/']" (click)="isCollapsed = !isCollapsed">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/cg']" (click)="isCollapsed = !isCollapsed">cg</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['/pages/page1/1']" (click)="isCollapsed = !isCollapsed">gallery</a>
+          </li>
+       
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggle"  href="#" onclick="return false;" id="dropdown01" ngbDropdownToggle>Category</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu >
+            <a class="dropdown-item" href="#">Angular</a>
+            <a class="dropdown-item" href="#">React</a>
+            <a class="dropdown-item" href="#">Vue.js</a>
+          </div>
+        </li>
+        <li class="nav-item"  [routerLinkActive]="['active']">
+          <a class="nav-link"   [routerLink]="['/postslar']" (click)="isCollapsed = !isCollapsed">pages</a>
+        </li>
+  
+  
+        <li class="nav-item"  [routerLinkActive]="['active']">
+          <a class="nav-link"   [routerLink]="['/menu']" (click)="isCollapsed = !isCollapsed">Menu</a>
+        </li>
+  
+        <li class="nav-item"  [routerLinkActive]="['active']">
+            <a class="nav-link"   [routerLink]="['/contact']" (click)="isCollapsed = !isCollapsed">Contact</a>
+           
+    
+          </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <!--<form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>-->
+    </div>
+  
+
+  </nav>
+
+

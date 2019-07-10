@@ -1,0 +1,205 @@
+#commentform {
+    padding-bottom: 40px;
+	text-align: center;
+	//padding: 20px;
+}
+
+#commentform h4 {
+	color: #000000;
+	padding-bottom: 40px;
+}
+.comment-date {
+	color: #999;
+	font-size: 12px;
+}
+//#commentform .form-group { margin-bottom: 25px }
+#commentform .form-group input,
+#commentform .form-group textarea { padding: 20px }
+#commentform .form-group input.form-control { height: auto }
+#commentform .form-group textarea.form-control { height: 236px }
+#commentform .form-control:focus {
+	border-color: #e008a0c5;
+	box-shadow: none;
+}
+#commentform::-webkit-input-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+#commentform:-moz-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+#commentform::-moz-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+#commentform:-ms-input-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+#commentform .text-danger { color: #fec303bd }
+.form-submit .submit {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 16px;
+	width: 180px;
+	line-height: 10px;
+	text-transform: uppercase;
+	border: 1px solid #000000;
+	color: #000000;
+	padding: 15px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased !important;
+	background: transparent;
+	border-radius: 0px;
+}
+#commentform .form-control { color: #000000 }
+#commentform .alert-danger {
+	color: #000000;
+	border-color: #c6c6c6;
+}
+
+
+
+.form-submit .submit:hover {background-color: #e7e7e7;}
+
+.cid-qwTDXa80kH {
+       
+	position: relative;
+	background-attachment: fixed;
+
+	background-image: url("/assets/camila-cordeiro.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover;
+	width: 100%;
+	height: 620px;
+
+}
+
+.overlayy {
+	position: absolute;
+
+	background: #2c5d44;
+	//#7b1059;
+	opacity: 0.4;
+	width: 100%;
+	height: 620px;
+
+	top: 0;
+	left: 0;
+	z-index: 1;
+	
+   
+}
+.cc {
+	//position: absolute;
+	position: relative;
+    //top: 50%;
+    //-webkit-transform: translateY(-50%);
+    //-ms-transform: translateY(-50%);
+    z-index: 2;
+	font-family: sans-serif;
+	padding-top: 20px;
+}
+.google-maps {
+	position: relative;
+	padding-bottom: 77%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+.team {
+    padding: 50px 0 80px;
+	text-align: center;
+	background: none repeat scroll 0 0 #1e124c75;
+
+}
+.team h2{
+	text-align: center;
+}
+.team .container .c {
+	text-align: center;
+	
+}
+.team img {
+    
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+}
+
+
+.team i {
+    
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: #a0db8e;
+	color: #fff;
+	margin-right: 4px;
+}
+
+.team a:hover i {
+    
+    background-color: #709963;
+}
+.team h4 {
+    
+    margin: 20px 0 20px;
+    color: #4c4c4c;
+}
+.h1-mystyle {
+	text-align: center;
+	font-size: 1.95em;
+    color: #ec456b;
+    border: 1px solid #e27528d1;
+	background-color: #aed6d6;
+}
+.font-color {
+	color: white;
+}
+
+@media (max-width: 765px) {
+	.cid-qwTDXa80kH {
+   
+	position: relative;
+	background-attachment: fixed;
+
+	background-image: url("/assets/camila-cordeiro.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover;
+	width: 100%;
+	height: 1100px;
+
+	}
+	.overlayy {
+
+		background: #aed6d6;
+		opacity: 0.4;
+		width: 100%;
+		height: 1100px;
+	
+		top: 0;
+		left: 0;
+		z-index: 1;
+		
+	   
+	}
+}

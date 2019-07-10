@@ -1,0 +1,54 @@
+<!--<app-navbar></app-navbar>-->
+
+<!--<div class="container margin-t">
+  <mat-toolbar color="primary">
+    <span>Blog List</span>
+  </mat-toolbar>
+  <div class="page-wrapper">
+    <div class="container" fxLayout="row wrap" fxLayoutGap="2px"  fxLayoutAlign="center">
+      <mat-card fxFlex="30" *ngFor="let post of posts$ | async">
+        <mat-card-header>
+          <mat-card-title><p>{{ post.title.rendered }}</p></mat-card-title>
+          <mat-card-subtitle>{{ post.date_gmt | date }}</mat-card-subtitle>
+  
+        </mat-card-header>
+        <img matCardImage [src]="post['acf'].another_awesome_image">
+        <mat-card-content [innerHTML]="post.excerpt.rendered"></mat-card-content>
+        <mat-card-actions align="start">
+          <a mat-button [routerLink]="['/post', post.id]">View</a>
+        </mat-card-actions>
+        
+        
+      </mat-card>
+    </div>
+    
+  </div>
+  </div>
+-->
+  <div class="container margin-t">
+    <mat-toolbar color="primary">
+      <br><br><br>
+      <span>Blog Listgg</span>
+    </mat-toolbar>
+    <div class="page-wrapper">
+      <div class="container" fxLayout="row wrap" fxLayoutGap="2px"  fxLayoutAlign="center">
+        <mat-card fxFlex="30" *ngFor="let post of posts$2;let i = index">
+          <mat-card-header>
+            <mat-card-title><p>{{ post.id }}</p></mat-card-title>
+            <mat-card-subtitle>{{ post.post_date | date }}</mat-card-subtitle>
+    
+          </mat-card-header>
+          <img matCardImage [src]="post['acf']['images'].url">
+          <mat-card-content [innerHTML]="post.post_content"></mat-card-content>
+          <mat-card-actions align="start">
+            <a mat-button [routerLink]="['/post', post.id]">View</a>
+          </mat-card-actions>
+          
+          
+        </mat-card>
+      </div>
+
+    </div>
+
+
+    </div>

@@ -1,0 +1,17 @@
+
+        <div class="row back-color wow fadeIn">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="flip-box cardcenter">
+                    <div class="column has-text-centered">
+                        <div class="img-row" *ngFor="let image of _albums; let i=index">
+                          <img class="img-frame" [src]="image.thumb" (click)="open(i)"/>
+                        </div>
+                      </div>
+                  
+                  <!--End of Gallery-->
+                    
+                  </div>
+            </div>
+            </div>
+
+            

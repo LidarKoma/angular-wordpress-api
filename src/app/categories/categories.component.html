@@ -1,0 +1,141 @@
+
+<!--
+<div class="container margin-t">
+  <mat-toolbar color="primary">
+    <span>Blog List</span>
+  </mat-toolbar>
+  <div class="page-wrapper">
+    <div class="container" fxLayout="row wrap" fxLayoutGap="8px"  fxLayoutAlign="center">
+      <mat-card fxFlex="calc(40% - 50px)" *ngFor="let post of posts$ | async">
+        <mat-card-header>
+          <mat-card-title><p>{{ post.id}}</p></mat-card-title>
+          <mat-card-subtitle>{{ post.id}}</mat-card-subtitle>
+  
+        </mat-card-header>
+       
+        <mat-card-actions align="start">
+          <a mat-button [routerLink]="['/postsByc', post.id]">View</a>
+        </mat-card-actions>
+        <a [routerLink]="['/postsByc', post.id]"><img matCardImage [src]="post['acf'].images.sizes['large']">
+      </a>
+      </mat-card>
+    </div>
+    
+  </div>
+  </div>
+-->
+<!--
+  <div class="container margin-t">
+    <mat-toolbar color="primary">
+      <span>Blog List</span>
+    </mat-toolbar>
+    <div class="page-wrapper" *ngIf="posts$2">
+      <div class="container" fxLayout="row wrap" fxLayoutGap="8px"  fxLayoutAlign="center">
+        <mat-card fxFlex="calc(40% - 50px)" *ngFor="let post2 of posts$2">
+          <mat-card-header>
+            <mat-card-title><p>{{ post2.name}}</p></mat-card-title>
+            <mat-card-subtitle>{{ post2.id}}</mat-card-subtitle>
+    
+          </mat-card-header>
+         
+          <mat-card-actions align="start">
+            <a mat-button [routerLink]="['/postsByc', post2.id]">View</a>
+          </mat-card-actions>
+          <a [routerLink]="['/postsByc', post2.id]"><img matCardImage [src]="post2['acf'].images.sizes['large']">
+        </a>
+        </mat-card>
+      </div>
+      
+    </div>
+    </div>
+-->
+
+
+  <!-- 
+    <div class="container margin-t background ">
+      
+      <mat-toolbar color="primary">
+        <span>Blog List2</span>
+      </mat-toolbar>
+      <div class="page-wrapper" *ngIf="services">
+        <div class="container" fxLayout="row wrap" fxLayoutGap="8px"  fxLayoutAlign="center">
+          <mat-card fxFlex="calc(40% - 50px)" *ngFor="let service of services">
+            <mat-card-header>
+              <mat-card-title><p>{{ service.name}}</p></mat-card-title>
+              <mat-card-subtitle>{{ service.id}}</mat-card-subtitle>
+      
+            </mat-card-header>
+           
+            <mat-card-actions align="start">
+              <a mat-button [routerLink]="['/work', service.id]">View</a>
+            </mat-card-actions>
+            <a [routerLink]="['/work', service.id]"><img matCardImage [src]="service.image">
+          </a>
+          </mat-card>
+        </div>
+        
+      </div>
+      </div>
+    -->
+
+  <div class="back-color">
+      <div class="container layout" *ngIf="services">
+          <h1 class="text-center h1-mystyle">Image at the bottom (card-img-bottom):</h1>
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" *ngFor="let service of services">
+          <div class="card text-center c">
+            <div class="card-body">
+              <h4 class="card-title">{{service.name}}</h4>
+              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          
+            
+            
+
+            <div class="hovereffect">
+                <img class="card-img-bottom img-responsive img-resize" src="{{service.image}}" style="width:100%">                
+                <div class="overlay">
+                   <h2>Hover effect 5</h2>
+                   
+                    <a class="info" [routerLink]="['/service', service.id,service.name +'.html']">link here</a>
+                   
+                   <!--
+                    <a class="info" (click)="work(service.id)">link here</a>
+                     -->
+                  </div>
+            </div>
+            
+          </div>
+          </div>
+          </div>
+
+              
+       
+        
+      </div>
+    </div>
+      
+<!--
+      <section class="cid-qwTDXa80kH">
+
+          <div class="container cc">
+              <div class="row">
+                <div class="col-md-7">
+                    <img class="apasity" src="assets/camila-cordeiro.jpg" alt="Mobirise" title="" width="100%">
+                  </div>
+                <div class="col-md-5">
+                    <h1>About the bride</h1>
+                        <p>
+                            Nam interdum lectus felis, non gravida risus laoreet sit amet. Nulla iaculis nulla risus, ac interdum nisi dapibus eget. Duis in enim eget nunc rhoncus malesuada. Suspendisse lectus turpis, posuere vitae sapien vel, fermentum consectetur urna.
+                        </p>                
+                      </div>
+              </div>
+            </div>
+              <div class="overlayy">
+                </div>
+          
+      
+      </section>
+    -->
+    

@@ -1,0 +1,50 @@
+
+
+
+<div class="layout" *ngIf="posts$">
+    <!--<app-navbar></app-navbar>-->
+    <div class="container">
+    <br><br>
+    <ng-template #loading>
+        <img src="assets/images/loading.gif">
+     </ng-template>
+    
+    <div class="center">
+     <p>some of posts about posts is amazing jkdsh d</p>
+     <h4>some of postsdd</h4>
+     <p>some of posts about posts is amazing jkdsh d</p>
+
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let post of posts$;let index=i">
+            <!-- style="width: 22rem;"-->
+
+           
+
+  <div class="card c" >
+      <!--<img class="card-img-top" src="assets/images/{{post.title}}.jpg" alt="Card image cap">
+      -->
+      <a [routerLink]="['/book', post.id]"><img class="card-img-top img-resize" src="assets/images/{{post.title}}.jpg">
+      </a>
+     
+      <div class="card-body">
+        <h5 class="card-title">{{ post.id}}</h5>
+
+        <p class="card-text">{{post.description}}</p>
+        <a [routerLink]="['/book', post.id]" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    
+
+    <br><br>
+    </div>
+
+   
+    
+
+    
+  </div>
+
+  </div>
+
+  </div>
+
